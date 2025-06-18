@@ -84,8 +84,8 @@ Welcome to the **Car Plate Detection Model** !
 graph TD
   A[Input Image/Video] --> B[YOLOv11 Plate Detection]
   B --> C[OCR Plate Number Extraction]
-  C --> D[REST API (FastAPI)]
-  D --> E[Smart Parking System]
+  C --> D["REST API (FastAPI)"]
+  D --> E["Smart Parking System"]
   E --> F[Gate Control & Vehicle Registration]
 ```
 
@@ -103,10 +103,12 @@ graph TD
 
 
 ### Results 
-[https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/results.png]
+
+![Detection Results](https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/results.png?raw=true)
 
 ### 📊 Confusion Matrix
-[https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/confusion_matrix_normalized.png]
+
+![Confusion Matrix](https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/confusion_matrix_normalized.png?raw=true)
 
 
 ### 📈 Results Summary
