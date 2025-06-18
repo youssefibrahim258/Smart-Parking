@@ -104,11 +104,11 @@ graph TD
 
 ### Results 
 
-<img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/results.png?raw=true" width="400"/>
+<img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/results.png?raw=true" width="600"/>
 
 ### 📊 Confusion Matrix
 
-<img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/confusion_matrix_normalized.png?raw=true" width="400"/>
+<img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/confusion_matrix_normalized.png?raw=true" width="600"/>
 
 
 ### 📈 Results Summary
