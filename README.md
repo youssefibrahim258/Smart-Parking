@@ -41,7 +41,7 @@ Smart Parking is an intelligent parking management system designed to streamline
 
 ________________________________________________________________________
 
-#Car Plate Detection Model
+# Car Plate Detection Model
 
 ## Overview
 
