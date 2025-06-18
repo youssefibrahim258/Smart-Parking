@@ -1,4 +1,4 @@
-# 🚗🅿️ Smart Parking
+#  Smart Parking
 
 Smart Parking is an intelligent parking management system designed to streamline the search for parking in crowded areas. Leveraging machine learning and real-time camera input, Smart Parking detects car plates at entry gates, automates vehicle registration, and enables users to locate and reserve available spaces through a dedicated mobile application.
 
@@ -25,17 +25,16 @@ Smart Parking is an intelligent parking management system designed to streamline
 
 ## 🛠️ Technologies Used
 
-- 🐍 **Python** &nbsp; ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-  Backend logic and image processing
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" height="40"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" height="40"/>
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" height="40"/>
+  <img src="https://img.shields.io/badge/YOLO-FFBB00?style=for-the-badge" alt="YOLO" height="40"/>
+  <img src="https://img.shields.io/badge/Machine%20Learning-FF6F00?style=for-the-badge&logo=probot&logoColor=white" alt="Machine Learning" height="40"/>
+</p>
 
-- ⚡ **FastAPI** &nbsp; ![FastAPI](https://img.shields.io/badge/-FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)  
-  High-performance API development
-
-- 📱 **Flutter** &nbsp; ![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)  
-  Cross-platform mobile application
-
-- 🎯 **YOLO**  
-  Real-time car plate detection (You Only Look Once)
-
-- 🤖 **Machine Learning**  
-  Object detection and system intelligence
+- **Python** – Backend logic and image processing  
+- **FastAPI** – High-performance API development  
+- **Flutter** – Cross-platform mobile application  
+- **YOLO** – Real-time car plate detection (You Only Look Once)  
+- **Machine Learning** – Object detection and system intelligence  
