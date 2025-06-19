@@ -125,7 +125,6 @@ graph TD
 
 **AI Engineer:** [mohamed-ehab415](https://github.com/mohamed-ehab415)
 
-```
 
 ---
 
@@ -242,18 +241,7 @@ curl -X POST "http://127.0.0.1:8000/status" -F "file=@frame.jpg"
   "d": { "empty": 55, "total": 90 }
 }
 ```
-## 🧱 Architecture
 
-```mermaid
-graph TD
-  A[Input Frame] --> B[SVM Model - Empty or Not]
-  B --> C[Spot Classification]
-  C --> D[REST API - FastAPI]
-  D --> E[Parking Management System]
-  E --> F[Mobile App or Dashboard]
-
-
----
 
 ##  Dependencies
 
