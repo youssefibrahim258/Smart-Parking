@@ -129,9 +129,7 @@ graph TD
 
 ---
 
-```
 
----
 
 
 # Parking Slot Detection System
@@ -248,12 +246,12 @@ curl -X POST "http://127.0.0.1:8000/status" -F "file=@frame.jpg"
 
 ```mermaid
 graph TD
-  A[Input Image Frame] --> B[SVM Model (Empty/Not Empty)]
+  A[Input Frame] --> B[SVM Model - Empty or Not]
   B --> C[Spot Classification]
-  C --> D["REST API (FastAPI)"]
-  D --> E["Parking Management System"]
+  C --> D[REST API - FastAPI]
+  D --> E[Parking Management System]
   E --> F[Mobile App or Dashboard]
-```
+
 
 ---
 
