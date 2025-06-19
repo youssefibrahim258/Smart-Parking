@@ -4,26 +4,26 @@ Smart Parking is an intelligent parking management system designed to streamline
 
 ---
 
-## 🚀 Features
+##  Features
 
-- **📸 Car Plate Detection**  
+- **Car Plate Detection**  
   Real-time license plate recognition utilizing YOLO and Python for accurate and fast detection.
 
-- **🔐 Automatic Gate Access Control**  
+- **Automatic Gate Access Control**  
   Seamless entry and exit automation based on vehicle registration and plate recognition.
 
-- **📱 Mobile App (Flutter)**  
+- **Mobile App (Flutter)**  
   Cross-platform mobile application provides users with real-time parking space availability.
 
-- **🛒 Store Selection & Navigation**  
+- **Store Selection & Navigation**  
   Recommends the nearest parking spot based on the user's selected destination, ensuring convenience.
 
-- **🎯 Reservation System**  
+- **Reservation System**  
   Allows users to reserve parking spots in advance, minimizing wait times and improving user experience.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" height="40"/>
@@ -106,12 +106,12 @@ graph TD
 
 <img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/results.png?raw=true" width="600"/>
 
-### 📊 Confusion Matrix
+### Confusion Matrix
 
 <img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/confusion_matrix_normalized.png?raw=true" width="600"/>
 
 
-### 📈 Results Summary
+### Results Summary
 
 - **Detection Accuracy:** High precision and recall for plate detection.
 - **OCR Performance:** Minimized misreadings through post-processing and fine-tuning.
