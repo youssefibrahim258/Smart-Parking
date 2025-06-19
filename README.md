@@ -1,7 +1,7 @@
 #  Smart Parking
 
 <p align="center">
-  <img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/logo%20parking.jpg?raw=true" alt="Smart Parking Logo" width="100%" height="auto"/>
+  <img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/logo%20parking.jpg?raw=true" alt="Smart Parking Logo" width="70%" height="auto"/>
 </p>
 
 
