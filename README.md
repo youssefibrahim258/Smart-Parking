@@ -1,6 +1,7 @@
 #  Smart Parking
 
-<img src="[https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/confusion_matrix_normalized.png?raw=true](https://github.com/youssefibrahim258/Smart-Parking/blob/master/logo%20parking.jpg])" width="1000"/>
+![Smart Parking Logo](https://github.com/youssefibrahim258/Smart-Parking/blob/master/logo%20parking.jpg?raw=true)
+
 
 Smart Parking is an intelligent parking management system designed to streamline the search for parking in crowded areas. Leveraging machine learning and real-time camera input, Smart Parking detects car plates at entry gates, automates vehicle registration, and enables users to locate and reserve available spaces through a dedicated mobile application.
 
