@@ -123,6 +123,18 @@ graph TD
 - **System Throughput:** Real-time performance suitable for live parking environments.
 
 ---
+## Tesseract Installation
+
+This project uses Tesseract OCR. The Tesseract executable is already included in the `tesseract` folder.
+
+### If you move the project to another machine:
+- Make sure the `tesseract` folder is kept in the project root.
+- Make sure `tesseract.exe` and the `tessdata` folder are inside it.
+
+The path is already configured in `config.py`.
+
+You do not need to install Tesseract globally.
+
 
 
 
