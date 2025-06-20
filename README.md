@@ -123,6 +123,10 @@ graph TD
 - **System Throughput:** Real-time performance suitable for live parking environments.
 
 ---
+## Tesseract Installation
+
+This model uses Tesseract OCR. The Tesseract executable is already included in the `tesseract` folder.
+
 
 
 
