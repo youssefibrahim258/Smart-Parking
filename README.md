@@ -125,7 +125,15 @@ graph TD
 ---
 ## Tesseract Installation
 
-This model uses Tesseract OCR. The Tesseract executable is already included in the `tesseract` folder.
+This project uses Tesseract OCR. The Tesseract executable is already included in the `tesseract` folder.
+
+### If you move the project to another machine:
+- Make sure the `tesseract` folder is kept in the project root.
+- Make sure `tesseract.exe` and the `tessdata` folder are inside it.
+
+The path is already configured in `config.py`.
+
+You do not need to install Tesseract globally.
 
 
 
