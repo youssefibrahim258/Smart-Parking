@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-opencv-python
-scikit-learn==1.4.2
-scikit-image
-numpy
-python-multipart
