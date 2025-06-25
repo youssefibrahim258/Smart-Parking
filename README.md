@@ -141,3 +141,157 @@ You do not need to install Tesseract globally.
 ## Contact
 
 **AI Engineer:** [mohamed-ehab415](https://github.com/mohamed-ehab415)
+
+
+---
+---
+
+
+
+
+# Parking Slot Detection System
+
+This project detects whether parking spots are **empty** or **not empty** using a trained Support Vector Machine (SVM) classifier. It includes:
+
+- A script to train the SVM model.
+- A real-time video detection script.
+- A FastAPI backend to serve predictions from the trained model.
+
+---
+
+##  Project Structure
+
+```
+ParkingDetector/
+│
+├── train_svm.py             # Train SVM classifier on image data
+├── main.py                  # Process video to detect parking status
+├── util.py                  # Helper functions (classification + cropping)
+├── api.py                   # FastAPI API for external access
+├── SVM_model                # Trained model saved as a pickle file
+├── mask_1920_1080.png       # Binary mask image for parking spots
+└── requirements.txt         # Python dependencies
+```
+
+---
+
+##  How the Model Works
+
+- Images of parking spots are resized to `15x15` pixels.
+- Each image is flattened into a feature vector and fed into an SVM classifier.
+- The model is trained on labeled data:
+  - `0` → empty
+  - `1` → not empty
+- `GridSearchCV` is used for hyperparameter tuning.
+
+---
+
+## ▶ How to Run the Project
+
+### 1. Train the Model (Optional - model already provided)
+
+```bash
+python train_svm.py
+```
+
+### 2. Run the Video Detection App
+
+Make sure you have:
+- `mask_1920_1080.png` → the parking area mask image
+- A video file path defined in `main.py`
+
+Then run:
+
+```bash
+python main.py
+```
+
+This will display:
+- Parking spots outlined:
+  - **Green** = empty
+  - **Red** = not empty
+- Region labels (A, B, C, D)
+- Live count of empty slots on the video
+
+---
+
+##  Run the FastAPI Backend
+
+### Step 1: Install requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 2: Start the FastAPI server
+
+```bash
+uvicorn api:app --reload
+```
+
+---
+
+## API Usage
+
+### `POST /status`
+
+Send an image frame and receive a JSON response with parking availability per region.
+
+#### Request Details:
+- **Method**: `POST`
+- **Endpoint**: `/status`
+- **Body Type**: `multipart/form-data`
+- **Field**: `file` → image frame (JPG/PNG)
+
+####  Example using `curl`:
+
+```bash
+curl -X POST "http://127.0.0.1:8000/status" -F "file=@frame.jpg"
+```
+
+####  Sample Response:
+
+```json
+{
+  "a": { "empty": 20, "total": 100 },
+  "b": { "empty": 15, "total": 120 },
+  "c": { "empty": 3, "total": 80 },
+  "d": { "empty": 55, "total": 90 }
+}
+```
+
+
+##  Dependencies
+
+Make sure you have the following Python libraries installed:
+
+```txt
+fastapi
+uvicorn
+opencv-python
+scikit-learn
+scikit-image
+numpy
+```
+
+You can install them via:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+##  Notes
+
+- The `mask_1920_1080.png` file defines the location of each parking spot using connected components.
+- Each parking spot is evaluated individually using the trained SVM classifier.
+- You can adjust the region splitting logic or video input path in `main.py`.
+- The backend API can be used by any client (mobile app, web app, etc.) to check real-time parking availability by sending frames.
+
+---
+
+##  Author
+
+Developed by **Yousef Ibrahim** —(https://github.com/youssefibrahim258).
+
