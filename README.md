@@ -175,6 +175,38 @@ ParkingDetector/
 
 ---
 
+---
+
+##  Model Overview
+
+###  Dataset
+- The dataset consists of labeled images of individual parking spots.
+- Two categories:
+  - `empty`: spots without a vehicle.
+  - `not_empty`: spots occupied by a vehicle.
+
+###  Data Preprocessing
+- All images are resized to **15x15** pixels for faster training and lower complexity.
+- Each image is **flattened** into a 1D feature vector.
+- Labels are encoded as:
+  - `0` → empty  
+  - `1` → not empty
+
+###  Model Training
+- An **SVM classifier** is used (`sklearn.svm.SVC`).
+- A **Grid Search with Cross-Validation** (`GridSearchCV`) is used to optimize:
+  - `C`: [1, 10, 100, 1000]
+  - `gamma`: [0.01, 0.001, 0.0001]
+- The dataset is split using `train_test_split` with 80% for training and 20% for testing.
+- The best model is saved to disk as `SVM_model` using `pickle`.
+
+### 📊 Evaluation
+- The final model achieved **100% accuracy** on the test set.
+- Classification metrics like precision, recall, and F1-score are all 1.0.
+---
+
+
+
 ##  How the Model Works
 
 - Images of parking spots are resized to `15x15` pixels.

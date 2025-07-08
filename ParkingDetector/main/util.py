@@ -6,7 +6,7 @@ import cv2
 Empty = True
 NOT_EMPTY = False
 
-model = pickle.load(open(r"Y:\Graduation project\ParkDetect\Model\SVM_model", 'rb'))
+model = pickle.load(open(r"Y:\Graduation project\ParkDetect\ParkingDetector\Model\SVM_model", 'rb'))
 
 def empty_or_not(spot_bgr):
 

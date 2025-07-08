@@ -7,8 +7,8 @@ def calc_diff(im1, im2):
     return np.abs(np.mean(im1) - np.mean(im2))
 
 
-mask_path = r"Y:\Graduation project\ParkDetect\main\mask_1920_1080.png"
-video_path = r"Y:\Graduation project\ParkDetect\Data\parking_1920_1080.mp4"
+mask_path = r"Y:\Graduation project\ParkDetect\ParkingDetector\main\mask_1920_1080.png"
+video_path = r"Y:\Graduation project\Data\parking_1920_1080_loop.mp4"
 
 
 mask = cv2.imread(mask_path, 0)
