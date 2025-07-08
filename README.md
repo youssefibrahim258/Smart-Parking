@@ -85,13 +85,14 @@ Welcome to the **Car Plate Detection Model** !
 
 ## Architecture
 
-graph LR
+
+mermaid
+graph TD
   A[Input Image/Video] --> B[YOLOv11 Plate Detection]
   B --> C[OCR Plate Number Extraction]
   C --> D["REST API (FastAPI)"]
   D --> E["Smart Parking System"]
   E --> F[Gate Control & Vehicle Registration]
-
 ---
 
 ## Dataset
