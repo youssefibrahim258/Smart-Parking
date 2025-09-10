@@ -1,7 +1,7 @@
 # Smart Parking System 🚗
 
 <p align="center">
-  <img src="asset/logo parking.jpg" alt="Smart Parking Logo" width="300"/>
+  <img src="asset/logo parking.jpg" alt="Smart Parking Logo" width="500"/>
 </p>
 
 <p align="center">
@@ -302,17 +302,8 @@ smart-parking/
 
 ## Additional Results
 
-### Dataset Samples
 
-<p align="center">
-  <img src="asset/image13.png" alt="License Plate Dataset Samples" width="600"/>
-</p>
-
-### Model Performance Analysis
-
-<p align="center">
-  <img src="asset/image14.png" alt="Precision-Recall Curves" width="400"/>
-  <img src="asset/image1.png" alt="Test Results" width="400"/>
+c="asset/image1.png" alt="Test Results" width="400"/>
 </p>
 
 ## Contributing
@@ -344,9 +335,6 @@ We welcome contributions! Please follow these steps:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Authors
-
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
 
 ## Acknowledgments
 
