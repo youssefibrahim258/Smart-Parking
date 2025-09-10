@@ -261,9 +261,19 @@ For complete API documentation, visit: `http://localhost:8000/docs`
 ### License Plate Recognition
 
 <p align="center">
-  <img src="asset/image7.png" alt="License Plate Detection" width="400"/>
-  <img src="asset/image8.png" alt="OCR Result" width="400"/>
-    <img src="asset/image9.png" alt="train code" width="400"/>
+  <img src="asset/image7.png" alt="License Plate Detection" width="400"/><br/>
+   <b>Figure 1:</b> License Plate Detection
+</p>
+
+<p align="center">
+  <img src="asset/image8.png" alt="OCR Result" width="400"/><br/>
+   <b>Figure 2:</b> OCR Result
+</p>
+
+<p align="center">
+  <img src="asset/image9.png" alt="Training Code" width="400"/><br/>
+   <b>Figure 3:</b> Training Code
+</p>
 
 </p>
 
@@ -358,7 +368,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or need help, please:
 - Open an issue on GitHub
-- Email us at support@smartparking.com
 - Check our [documentation](docs/)
 
 ---
