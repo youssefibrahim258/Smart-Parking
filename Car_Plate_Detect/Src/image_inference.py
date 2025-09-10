@@ -5,7 +5,7 @@ import cv2
 model = YOLO(r"E:\car_plate_detect\models\best.pt")
 
 # Load image
-image = cv2.imread("E:\car_plate_detect\Dataset\OIP.jpeg")
+image = cv2.imread("E:\Smart-Parking\Car_Plate_Detect\Dataset\why-are-number-plates-yellow-and-white.jpg")
 
 # Run inference
 results = model(image)
