@@ -238,23 +238,23 @@ For complete API documentation, visit: `http://localhost:8000/docs`
 ### Mobile Application
 
 <p align="center">
-  <img src="asset/app1.png" alt="Parking Space Detection" width="600"/>
+  <img src="asset/app1.png" alt="Parking Space Detection" width="300"/>
 </p>
 
 <p align="center">
-  <img src="asset/app2.png" alt="Parking Space Detection" width="600"/>
+  <img src="asset/app2.png" alt="Parking Space Detection" width="300"/>
 </p>
 
 <p align="center">
-  <img src="asset/app3.png" alt="Parking Space Detection" width="600"/>
+  <img src="asset/app3.png" alt="Parking Space Detection" width="300"/>
 </p>
 
 <p align="center">
-  <img src="asset/app4.png" alt="Parking Space Detection" width="600"/>
+  <img src="asset/app4.png" alt="Parking Space Detection" width="300"/>
 </p>
 
 <p align="center">
-  <img src="asset/app5.png" alt="Parking Space Detection" width="600"/>
+  <img src="asset/app5.png" alt="Parking Space Detection" width="300"/>
 </p>
 
 
