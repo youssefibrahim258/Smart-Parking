@@ -1,7 +1,7 @@
 # Smart Parking System 🚗
 
 <p align="center">
-  <img src="images/logo_parking.jpg" alt="Smart Parking Logo" width="300"/>
+  <img src="asset/image1.png" alt="Smart Parking Logo" width="300"/>
 </p>
 
 <p align="center">
@@ -26,9 +26,15 @@
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
 - [Model Performance](#model-performance)
-
+- [Screenshots](#screenshots)
+- [File Structure](#file-structure)
+- [Additional Results](#additional-results)
 - [Contributing](#contributing)
+- [Roadmap](#roadmap)
 - [License](#license)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgments)
+- [Support](#support)
 
 ## Overview
 
@@ -50,13 +56,13 @@ Our system combines **real-time camera data**, **AI models**, and a **mobile app
 ## Features
 
 ### Core Functionality
-- **Real-time Space Detection**: AI-powered detection of available parking spots
-- **License Plate Recognition**: Automatic vehicle identification using YOLOv11 + OCR
-- **Mobile App Integration**: Flutter-based cross-platform application
-- **Smart Reservations**: Book parking spots in advance
-- **Destination-based Guidance**: Recommend parking near target stores
-- **Automatic Fee Calculation**: Duration-based pricing with automated billing
-- **Find My Car**: Help users locate their parked vehicles
+- **Real-time Space Detection:** AI-powered detection of available parking spots
+- **License Plate Recognition:** Automatic vehicle identification using YOLOv11 + OCR
+- **Mobile App Integration:** Flutter-based cross-platform application
+- **Smart Reservations:** Book parking spots in advance
+- **Destination-based Guidance:** Recommend parking near target stores
+- **Automatic Fee Calculation:** Duration-based pricing with automated billing
+- **Find My Car:** Help users locate their parked vehicles
 
 ### User Benefits
 - ⏱️ Reduced waiting time
@@ -68,15 +74,15 @@ Our system combines **real-time camera data**, **AI models**, and a **mobile app
 ## Architecture
 
 <p align="center">
-  <img src="images/architecture_diagram.png" alt="System Architecture" width="800"/>
+  <img src="asset/image2.png" alt="System Architecture" width="800"/>
 </p>
 
 The Smart Parking system follows a **modular, layered architecture**:
 
-1. **Computer Vision Layer**: YOLOv11 + OCR for license plate recognition, SVM for space detection
-2. **Backend Layer**: FastAPI-based REST API with PostgreSQL database
-3. **Mobile Layer**: Flutter application for user interaction
-4. **Integration Layer**: Real-time synchronization between all components
+1. **Computer Vision Layer:** YOLOv11 + OCR for license plate recognition, SVM for space detection
+2. **Backend Layer:** FastAPI-based REST API with PostgreSQL database
+3. **Mobile Layer:** Flutter application for user interaction
+4. **Integration Layer:** Real-time synchronization between all components
 
 ### Workflow
 ```
@@ -85,15 +91,15 @@ Vehicle Entry → Camera Capture → AI Processing → Database Update → Mobil
 
 ## Technology Stack
 
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| **Backend** | FastAPI | Lightweight REST API |
-| **Database** | PostgreSQL | Data storage and management |
-| **Mobile App** | Flutter | Cross-platform mobile application |
-| **AI Models** | YOLOv11, OpenCV, SVM | Computer vision and ML |
-| **Dataset** | Roboflow | Data annotation and preprocessing |
-| **Training** | Kaggle API | Cloud-based model training |
-| **OCR** | OpenCV + Tesseract | Text extraction from images |
+| Component      | Technology            | Purpose                            |
+|----------------|----------------------|------------------------------------|
+| **Backend**    | FastAPI              | Lightweight REST API               |
+| **Database**   | PostgreSQL           | Data storage and management        |
+| **Mobile App** | Flutter              | Cross-platform mobile application  |
+| **AI Models**  | YOLOv11, OpenCV, SVM | Computer vision and ML             |
+| **Dataset**    | Roboflow             | Data annotation and preprocessing  |
+| **Training**   | Kaggle API           | Cloud-based model training         |
+| **OCR**        | OpenCV + Tesseract   | Text extraction from images        |
 
 ## Installation
 
@@ -213,23 +219,23 @@ For complete API documentation, visit: `http://localhost:8000/docs`
 ## Model Performance
 
 ### License Plate Detection (YOLOv11)
-- **Dataset Size**: 2,640 annotated images
-- **Training Accuracy**: 94.2%
-- **Validation Accuracy**: 91.8%
-- **Inference Time**: ~50ms per image
+- **Dataset Size:** 2,640 annotated images
+- **Training Accuracy:** 94.2%
+- **Validation Accuracy:** 91.8%
+- **Inference Time:** ~50ms per image
 
 <p align="center">
-  <img src="images/yolo_training_curves.png" alt="Training Curves" width="600"/>
+  <img src="asset/image3.png" alt="Training Curves" width="600"/>
 </p>
 
 ### Parking Space Classification (SVM)
-- **Accuracy**: 100% on test set
-- **Precision**: 1.0
-- **Recall**: 1.0
-- **F1-Score**: 1.0
+- **Accuracy:** 100% on test set
+- **Precision:** 1.0
+- **Recall:** 1.0
+- **F1-Score:** 1.0
 
 <p align="center">
-  <img src="images/confusion_matrix.png" alt="Confusion Matrix" width="400"/>
+  <img src="asset/image4.png" alt="Confusion Matrix" width="400"/>
 </p>
 
 ## Screenshots
@@ -237,29 +243,29 @@ For complete API documentation, visit: `http://localhost:8000/docs`
 ### Mobile Application
 
 <p align="center">
-  <img src="images/app_home.png" alt="Home Screen" width="200"/>
-  <img src="images/app_availability.png" alt="Parking Availability" width="200"/>
-  <img src="images/app_reservation.png" alt="Reservation" width="200"/>
-  <img src="images/app_payment.png" alt="Payment" width="200"/>
+  <img src="asset/image5.png" alt="Home Screen" width="200"/>
+  <img src="asset/image6.png" alt="Parking Availability" width="200"/>
+  <img src="asset/image7.png" alt="Reservation" width="200"/>
+  <img src="asset/image8.png" alt="Payment" width="200"/>
 </p>
 
 ### License Plate Recognition
 
 <p align="center">
-  <img src="images/plate_detection.png" alt="License Plate Detection" width="400"/>
-  <img src="images/ocr_result.png" alt="OCR Result" width="400"/>
+  <img src="asset/image9.png" alt="License Plate Detection" width="400"/>
+  <img src="asset/image10.png" alt="OCR Result" width="400"/>
 </p>
 
 ### Parking Space Detection
 
 <p align="center">
-  <img src="images/parking_detection.png" alt="Parking Space Detection" width="600"/>
+  <img src="asset/image11.png" alt="Parking Space Detection" width="600"/>
 </p>
 
 ### Database Schema
 
 <p align="center">
-  <img src="images/database_erd.png" alt="Database ERD" width="600"/>
+  <img src="asset/image12.png" alt="Database ERD" width="600"/>
 </p>
 
 ## File Structure
@@ -288,7 +294,7 @@ smart-parking/
 ├── datasets/
 │   ├── license_plates/
 │   └── parking_spaces/
-├── images/
+├── asset/
 ├── docs/
 ├── requirements.txt
 └── README.md
@@ -299,14 +305,14 @@ smart-parking/
 ### Dataset Samples
 
 <p align="center">
-  <img src="asset/image4.png" alt="License Plate Dataset Samples" width="600"/>
+  <img src="asset/image13.png" alt="License Plate Dataset Samples" width="600"/>
 </p>
 
 ### Model Performance Analysis
 
 <p align="center">
-  <img src="asset/image17.png" alt="Precision-Recall Curves" width="400"/>
-  <img src="asset/image18.png" alt="Test Results" width="400"/>
+  <img src="asset/image14.png" alt="Precision-Recall Curves" width="400"/>
+  <img src="asset/image15.png" alt="Test Results" width="400"/>
 </p>
 
 ## Contributing
@@ -360,4 +366,4 @@ If you have any questions or need help, please:
 
 <p align="center">
   Made with ❤️ for smarter cities
-</p> 
+</p>
