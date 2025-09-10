@@ -85,6 +85,11 @@ The Smart Parking system follows a **modular, layered architecture**:
 4. **Integration Layer:** Real-time synchronization between all components
 
 ### Workflow
+
+<p align="center">
+  <img src="asset/image1.png" alt="Parking Space Detection" width="300"/>
+</p>
+
 ```
 Vehicle Entry → Camera Capture → AI Processing → Database Update → Mobile App Sync
 ```
