@@ -87,7 +87,7 @@ The Smart Parking system follows a **modular, layered architecture**:
 ### Workflow
 
 <p align="center">
-  <img src="asset/image1.png" alt="Parking Space Detection" width="300"/>
+  <img src="asset/image1.png" alt="Parking Space Detection" width="500"/>
 </p>
 
 ```
