@@ -4,318 +4,462 @@
   <img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/logo%20parking.jpg?raw=true" alt="Smart Parking Logo" width="70%" height="400"/>
 </p>
 
+# 🚗 Smart Parking System
 
-Smart Parking is an intelligent parking management system designed to streamline the search for parking in crowded areas. Leveraging machine learning and real-time camera input, Smart Parking detects car plates at entry gates, automates vehicle registration, and enables users to locate and reserve available spaces through a dedicated mobile application.
+Smart Parking is an **AI-powered parking management system** designed for shopping malls.  
+It helps drivers save time by automatically detecting vacant spaces, recognizing license plates, and allowing users to reserve and locate their cars through a mobile app.
 
----
+### 🔍 Problem
+Finding a parking spot in crowded areas wastes time and causes unnecessary traffic.  
 
-##  Features
+### 🎯 Solution
+Our system combines **real-time camera data**, **AI models**, and a **mobile application** to automate:
+- Detecting available parking spots
+- Vehicle registration via license plate recognition
+- Reservation & navigation through the mobile app
 
-- **Car Plate Detection**  
-  Real-time license plate recognition utilizing YOLO and Python for accurate and fast detection.
+### ✨ Expected Outcome
+- Faster & easier parking experience  
+- Optimized space utilization  
+- Reduced congestion inside malls  
+- Higher customer satisfaction 🚀
 
-- **Automatic Gate Access Control**  
-  Seamless entry and exit automation based on vehicle registration and plate recognition.
 
-- **Mobile App (Flutter)**  
-  Cross-platform mobile application provides users with real-time parking space availability.
+## 🏙️ Introduction
 
-- **Store Selection & Navigation**  
-  Recommends the nearest parking spot based on the user's selected destination, ensuring convenience.
+During peak hours and weekends, drivers often waste a lot of time circling around to find a free parking spot.  
+This leads to:
+- Delays & dissatisfaction  
+- Traffic congestion at mall entrances  
+- Higher fuel consumption  
+- Reduced mall sales due to lost foot traffic  
 
-- **Reservation System**  
-  Allows users to reserve parking spots in advance, minimizing wait times and improving user experience.
+**Smart Parking** solves this by providing a **fully automated AI-powered system** for malls.  
+The main goals are:
+- ⏱️ Reduce waiting time  
+- 🅿️ Detect available parking spots in real-time using AI  
+- 📱 Allow users to **reserve spots** and **locate their cars** via a mobile app  
+- 🛍️ Recommend parking areas nearest to the user’s target store  
 
----
+This eliminates human intervention in parking management, **improves traffic flow**, and enhances both **service quality** and **operational efficiency** for mall operators.  
 
-## Technologies Used
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" height="40"/>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" height="40"/>
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" height="40"/>
-  <img src="https://img.shields.io/badge/YOLO-FFBB00?style=for-the-badge" alt="YOLO" height="40"/>
-  <img src="https://img.shields.io/badge/Machine%20Learning-FF6F00?style=for-the-badge&logo=probot&logoColor=white" alt="Machine Learning" height="40"/>
-</p>
-
-- **Python** – Backend logic and image processing  
-- **FastAPI** – High-performance API development  
-- **Flutter** – Cross-platform mobile application  
-- **YOLO** – Real-time car plate detection (You Only Look Once)  
-- **Machine Learning** – Object detection and system intelligence
-
-________________________________________________________________________
-
-# Car Plate Detection Model
-
-## Overview
-
-Welcome to the **Car Plate Detection Model** !  
-. The system leverages YOLOv11 for car plate detection and integrates Optical Character Recognition (OCR) for precise plate number extraction, enabling automated gate access and vehicle registration.
+![](assets/image1.png)
 
 ---
 
-## Features
+## 🔬 Contribution & Innovation
 
-- **AI-Powered Plate Detection:**  
-  Utilizes YOLOv11 for robust and accurate car plate localization.
+Unlike traditional systems that depend on **manual work** or **ultrasonic sensors**, Smart Parking uses **machine learning & computer vision** to:  
+- Detect available spaces in real time  
+- Recognize license plates at entry gates with high accuracy  
+- Suggest the best parking spot closest to the user’s destination  
 
-- **High-Quality Dataset:**  
-  Trained and validated on the Roboflow Plate Dataset, comprising 2,600 expertly annotated images.
+📱 The mobile app adds extra value:
+- Live parking availability  
+- Advance spot reservation  
+- “Find my car” feature  
 
-- **Accurate Plate Number Extraction:**  
-  Employs advanced OCR techniques to read plate numbers from detected regions with high precision.
+From a **research & industry perspective**, this project contributes to the fields of **smart cities** and **intelligent mobility** by:  
+- Introducing a scalable, retrainable AI model adaptable to malls, airports, universities, and hospitals  
+- Storing anonymized parking data for future analytics & optimization  
+- Providing a practical implementation of **AI-based space optimization** in real-world environments 🚀  
 
-- **REST API Deployment:**  
-  FastAPI-based backend serves real-time detection and recognition results via RESTful endpoints.
+## 🔗 Related Work
 
-- **Smart Parking Integration:**  
-  Seamless integration with parking management systems for automatic gate control and vehicle registration.
+Several smart parking systems have been developed to tackle urban traffic and parking optimization.  
 
-- **Performance Monitoring:**  
-  Comprehensive evaluation using confusion matrices, accuracy metrics, and visualization tools.
+- **Sensor-based systems**: Use ultrasonic or infrared sensors for each spot. Effective in garages/airports, but **costly** and hard to scale in open areas like malls.  
+- **Mobile apps (e.g., ParkMobile, JustPark, ParkPlus)**: Provide reservations and payments, but rely on manual input or static data — **no real-time detection** or automatic recognition.  
+- **Recent research**: Explores AI & computer vision with CCTV, but most remain at **prototype stage**, focusing only on availability detection (no user interaction or reservations).  
 
-- **Continuous Improvement:**  
-  Detection accuracy enhanced through iterative model fine-tuning and OCR post-processing.
-
-- **Version Control and Documentation:**  
-  All development, experiments, and results are tracked and managed using GitHub.
-
----
-
-## Architecture
-
-
-<pre><code>## 📊 Architecture ```mermaid graph TD A[Input Image/Video] --> B[YOLOv11 Plate Detection] B --> C[OCR Plate Number Extraction] C --> D["REST API (FastAPI)"] D --> E["Smart Parking System"] E --> F[Gate Control & Vehicle Registration] ``` </code></pre>
-
-## Dataset
-
-- **Source:** Roboflow Plate Dataset  
-- **Size:** 2,600 annotated images  
-- **Preparation:** Downloaded, cleaned, and split for training and validation.
+🚀 **Our Smart Parking system** goes beyond these limitations by combining:  
+- AI-powered real-time space detection  
+- License plate recognition  
+- Mobile app with reservations, guidance, and destination-based suggestions  
+- Full automation with **minimal infrastructure**  
 
 ---
 
-## Results
+### 📊 Comparative Analysis
 
-
-### Results 
-
-<img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/results.png?raw=true" width="600"/>
-
-### Confusion Matrix
-
-<img src="https://github.com/youssefibrahim258/Smart-Parking/blob/master/Car_Plate_Detect/outputs/confusion_matrix_normalized.png?raw=true" width="600"/>
-
-
-### Results Summary
-
-- **Detection Accuracy:** High precision and recall for plate detection.
-- **OCR Performance:** Minimized misreadings through post-processing and fine-tuning.
-- **System Throughput:** Real-time performance suitable for live parking environments.
-
----
-## Tesseract Installation
-
-This project uses Tesseract OCR. The Tesseract executable is already included in the `tesseract` folder.
-
-### If you move the project to another machine:
-- Make sure the `tesseract` folder is kept in the project root.
-- Make sure `tesseract.exe` and the `tessdata` folder are inside it.
-
-The path is already configured in `config.py`.
-
-You do not need to install Tesseract globally.
-
-
-
-
-## Contact
-
-**AI Engineer:** [mohamed-ehab415](https://github.com/mohamed-ehab415)
-
-
----
----
-
-
-
-
-# Parking Slot Detection System
-
-This project detects whether parking spots are **empty** or **not empty** using a trained Support Vector Machine (SVM) classifier. It includes:
-
-- A script to train the SVM model.
-- A real-time video detection script.
-- A FastAPI backend to serve predictions from the trained model.
+| Feature                          | ParkMobile / JustPark | Sensor-Based Systems | 🚗 Proposed Smart Parking |
+|----------------------------------|-----------------------|----------------------|----------------------------|
+| Real-time space detection        | ❌ No                 | ✅ Yes (with sensors) | ✅ Yes (AI + Computer Vision) |
+| License plate recognition        | ❌ No                 | ❌ No                | ✅ Yes |
+| Mobile reservation               | ✅ Yes                | ❌ No                | ✅ Yes |
+| Infrastructure cost              | 💲 Low                | 💲💲💲 High          | 💲 Low |
+| Destination-based guidance       | ❌ No                 | ❌ No                | ✅ Yes |
+| Full automation (no human input) | ❌ No                 | ❌ No                | ✅ Yes |
+| Scalability & flexibility        | ⚖️ Medium             | ⚖️ Limited          | ⚖️ High |
 
 ---
 
-##  Project Structure
+✅ Unlike existing systems, **Smart Parking** integrates real-time AI detection, license plate recognition, and user-centric features (like destination-aware parking suggestions) — all while keeping infrastructure cost low and ensuring full automation.
 
-```
-ParkingDetector/
-│
-├── train_svm.py             # Train SVM classifier on image data
-├── main.py                  # Process video to detect parking status
-├── util.py                  # Helper functions (classification + cropping)
-├── api.py                   # FastAPI API for external access
-├── SVM_model                # Trained model saved as a pickle file
-├── mask_1920_1080.png       # Binary mask image for parking spots
-└── requirements.txt         # Python dependencies
-```
+ ## 💻 Software Description
+
+### 🏗️ Software Architecture
+The Smart Parking system is built on a **modular, layered architecture** that combines:
+- **Computer Vision & Machine Learning** for license plate recognition and space detection  
+- **Cloud-based backend** for managing communication between modules  
+- **Mobile application** for user interaction  
+
+🔄 **Workflow**:
+1. A car enters the mall → Surveillance camera captures the license plate  
+2. **YOLOv11 + OCR** extracts the plate number → Sent to **FastAPI backend**  
+3. Backend checks registration in **PostgreSQL** (or creates new entry)  
+4. Parking area cameras → AI model (SVM + CV) detects empty spots  
+5. Availability info stored in **central SQL DB** → Synced with mobile app in real time  
+
+This architecture ensures **automation, scalability, and seamless user experience**.
+![](asset/image2.png)
+            
+---
+
+### 🛠️ Tools & Technologies
+
+| Tool / Technology | Purpose |
+|-------------------|---------|
+| **FastAPI**       | Lightweight backend API for communication between modules |
+| **Flutter**       | Cross-platform mobile app (Android + iOS) |
+| **PostgreSQL**    | Relational DB for users, plates, and parking spot data |
+| **YOLOv11**       | License plate detection (trained with Roboflow dataset) |
+| **OpenCV + OCR**  | Image processing & text extraction from plates |
+| **SVM**           | Classification of free/occupied spots |
+| **Roboflow**      | Dataset annotation, preprocessing, automated training |
+| **Kaggle API**    | Cloud-based GPU training & inference jobs |
+| **GitHub**        | Version control & collaboration |
+| **VS Code**       | Development environment |
+
+---
+![](asset/image2.png)
+
+### ⚙️ Core Functionalities
+
+1. **🔍 License Plate Recognition**  
+   - Captures plate images at entry  
+   - Processes them with **YOLOv11 + OpenCV + OCR**  
+   - Stores extracted text in DB → Enables automated tracking  
+
+2. **🅿️ Real-Time Parking Space Detection**  
+   - Cameras monitor availability continuously  
+   - **SVM + CV** detect free vs occupied spots  
+   - Data instantly synced to DB & mobile app  
+
+3. **📱 Mobile Application Integration (Flutter)**  
+   - View available spots  
+   - Reserve before arrival  
+   - Get directions to nearest spot (based on destination inside mall)  
+   - Receive reminders of where the car is parked  
+
+4. **💳 Automatic Fee Estimation**  
+   - Entry time logged via plate recognition  
+   - On exit, system auto-calculates fee based on duration  
+   - Displayed directly to user in app (no human interaction)  
+
+5. **🗄️ Centralized Backend & Database**  
+   - **FastAPI + PostgreSQL** handle all communication  
+   - Ensures real-time updates between cameras, AI models, and mobile app  
+   - Provides scalability & reliability  
 
 ---
 
----
+ # ⚙️ 4. Methodology  
 
-##  Model Overview
+## 4.1 Data Collection and Preprocessing  
 
-###  Dataset
-- The dataset consists of labeled images of individual parking spots.
-- Two categories:
-  - `empty`: spots without a vehicle.
-  - `not_empty`: spots occupied by a vehicle.
+### 4.1.1 License Plate Dataset  
+A custom dataset was created for license plate detection, the first step toward automating vehicle entry registration.  
 
-###  Data Preprocessing
-- All images are resized to **15x15** pixels for faster training and lower complexity.
-- Each image is **flattened** into a 1D feature vector.
-- Labels are encoded as:
-  - `0` → empty  
-  - `1` → not empty
+- **Source**: Built using Roboflow with custom images manually annotated.  
+- **Classes**: `license_plate`  
+- **Annotation Method**: Bounding boxes using Roboflow’s tool.  
 
-###  Model Training
-- An **SVM classifier** is used (`sklearn.svm.SVC`).
-- A **Grid Search with Cross-Validation** (`GridSearchCV`) is used to optimize:
-  - `C`: [1, 10, 100, 1000]
-  - `gamma`: [0.01, 0.001, 0.0001]
-- The dataset is split using `train_test_split` with 80% for training and 20% for testing.
-- The best model is saved to disk as `SVM_model` using `pickle`.
+**Preprocessing Steps**  
+- Resized to **640×640** (YOLOv11 input).  
+- Normalized & converted to RGB.  
+- Applied augmentation:  
+  - Horizontal flipping  
+  - Brightness/contrast adjustment  
+  - Rotation (±15°)  
 
-### 📊 Evaluation
-- The final model achieved **100% accuracy** on the test set.
-- Classification metrics like precision, recall, and F1-score are all 1.0.
----
+**Dataset Split**  
 
+| Subset      | %   | Images |
+|-------------|-----|--------|
+| Training    | 67% | 1773   |
+| Validation  | 16% | 435    |
+| Testing     | 16% | 432    |
 
-
-##  How the Model Works
-
-- Images of parking spots are resized to `15x15` pixels.
-- Each image is flattened into a feature vector and fed into an SVM classifier.
-- The model is trained on labeled data:
-  - `0` → empty
-  - `1` → not empty
-- `GridSearchCV` is used for hyperparameter tuning.
+✅ Ensures generalization across different environments & vehicles.  
+![](assets/image4.png)  
+📸 *Figure 4: Sample labeled images from the license plate dataset.*  
 
 ---
 
-## ▶ How to Run the Project
+### 4.1.2 Parking Slot Detection  
 
-### 1. Train the Model (Optional - model already provided)
+- Dataset: Labeled images of **individual parking spots**.  
+- Classes:  
+  - `empty` → unoccupied  
+  - `not_empty` → occupied  
 
-```bash
-python train_svm.py
-```
+**Preprocessing**  
+- Resized to **15×15 pixels**.  
+- Flattened into 1D feature vectors.  
+- Encoded labels: `0 → empty`, `1 → not_empty`.  
 
-### 2. Run the Video Detection App
-
-Make sure you have:
-- `mask_1920_1080.png` → the parking area mask image
-- A video file path defined in `main.py`
-
-Then run:
-
-```bash
-python main.py
-```
-
-This will display:
-- Parking spots outlined:
-  - **Green** = empty
-  - **Red** = not empty
-- Region labels (A, B, C, D)
-- Live count of empty slots on the video
+📸 *Figure 5: Sample image of a parking spot (unannotated).*  
 
 ---
 
-##  Run the FastAPI Backend
+## 4.2 Model Development  
 
-### Step 1: Install requirements
+### 4.2.1 Car Plate Detection Model  
 
-```bash
-pip install -r requirements.txt
-```
+**Overview**  
+Two-stage pipeline:  
+1. **YOLOv11** → Detect license plate.  
+2. **OCR** → Extract plate number as text.  
 
-### Step 2: Start the FastAPI server
+**Key Features**  
+- 🚀 Real-time & robust plate detection.  
+- 🗂️ Dataset: 2.6k+ annotated images.  
+- 🔎 High precision OCR for plate numbers.  
+- 🌐 RESTful API (FastAPI) for integration.  
+- 🔄 Fully integrated with Smart Parking framework.  
+- 📊 Evaluated with confusion matrix, accuracy, visual tools.  
+- 📝 Version controlled (GitHub).  
 
-```bash
-uvicorn api:app --reload
-```
+**Training Hyperparameters**  
+
+| Hyperparameter | Value   | Description |
+|----------------|---------|-------------|
+| `epochs`       | 50      | Training iterations |
+| `batch`        | 8       | Small size (reduce overfitting) |
+| `imgsz`        | 640     | Input size |
+| `lr0`          | 0.003   | Initial learning rate |
+| `lrf`          | 0.01    | LR decay |
+| `momentum`     | 0.937   | Faster convergence |
+| `weight_decay` | 0.0005  | Prevent overfitting |
+| `patience`     | 20      | Early stopping |
+| `cache`        | True    | Faster data loading |
+
 
 ---
 
-## API Usage
+### 4.2.2 Parking Spot Classification Model  
 
-### `POST /status`
+- **Algorithm**: Support Vector Machine (SVM).  
+- **Library**: `sklearn.svm.SVC`.  
+- **Hyperparameter Tuning**: Grid Search + Cross Validation.  
 
-Send an image frame and receive a JSON response with parking availability per region.
+Parameters:  
+- `C`: {1, 10, 100, 1000}  
+- `gamma`: {0.01, 0.001, 0.0001}  
 
-#### Request Details:
-- **Method**: `POST`
-- **Endpoint**: `/status`
-- **Body Type**: `multipart/form-data`
-- **Field**: `file` → image frame (JPG/PNG)
-
-####  Example using `curl`:
-
-```bash
-curl -X POST "http://127.0.0.1:8000/status" -F "file=@frame.jpg"
-```
-
-####  Sample Response:
-
-```json
-{
-  "a": { "empty": 20, "total": 100 },
-  "b": { "empty": 15, "total": 120 },
-  "c": { "empty": 3, "total": 80 },
-  "d": { "empty": 55, "total": 90 }
-}
-```
-
-
-##  Dependencies
-
-Make sure you have the following Python libraries installed:
-
-```txt
-fastapi
-uvicorn
-opencv-python
-scikit-learn
-scikit-image
-numpy
-```
-
-You can install them via:
-
-```bash
-pip install -r requirements.txt
-```
+- Dataset split: **80/20 train-test**.  
+- Best model saved as `SVM_model.pkl`.  
 
 ---
 
-##  Notes
+## 4.3 Implementation  
 
-- The `mask_1920_1080.png` file defines the location of each parking spot using connected components.
-- Each parking spot is evaluated individually using the trained SVM classifier.
-- You can adjust the region splitting logic or video input path in `main.py`.
-- The backend API can be used by any client (mobile app, web app, etc.) to check real-time parking availability by sending frames.
+### 4.3.1 Car Plate Detection (YOLO + OCR)  
+
+- **Training**: YOLOv11 on 2.6k+ annotated plates.  
+- **Pipeline**:  
+  - Detect plate → bounding box.  
+  - Extract region → Preprocessing (grayscale, threshold).  
+  - OCR → Plate text.  
+
+![](assets/image6.png)  
+📸 *Figure 6: YOLOv11 training config.*
+![](assets/image7.png)  
+📸 *Figure 7: License plate detection (YOLOv11).*
+![](assets/image8.png)  
+📸 *Figure 8: OCR extracted plate number.*  
 
 ---
 
-##  Author
+### 4.3.2 Parking Spot Classification (SVM)  
 
-Developed by **Yousef Ibrahim** —(https://github.com/youssefibrahim258).
+- Input: Cropped images of spots.  
+- Processing: Resize → Flatten → Classification.  
+- Real-time detection:  
+  - Extract parking regions via mask.  
+  - Classify (green = empty, red = occupied).  
+  - Sync with backend (FastAPI).  
+![](assets/image9.png)  
+📸 *Figure 9: SVM training pipeline.*
+![](assets/image10.png)  
+📸 *Figure 10: Real-time frame with spot classification.*  
 
+---
+
+### 4.3.4 PostgreSQL Database Design  
+
+**Core Tables**  
+- `users`: Stores user info & linked car plate.  
+- `car`: Active sessions (entry/exit, payment).  
+- `parking_history`: Archived sessions.  
+
+**Triggers**  
+- Auto fee calculation on exit.  
+- Auto move records → archive.  
+- Auto insert on registration.  
+![](assets/image11.png)  
+📸 *Figure 11: ERD schema.*  
+
+**Integration**  
+- ORM: SQLAlchemy / psycopg2.  
+- FastAPI Endpoints:  
+  - User registration  
+  - Car entry/exit  
+  - Fee updates & payments  
+  - History queries  
+![](assets/image12.png)  
+📸 *Figure 12: API endpoints & sample response.*  
+
+---
+
+### 4.3.5 Mobile Application (Flutter)  
+
+**Purpose**  
+Main interface between users & Smart Parking system.  
+
+**Features**  
+- View real-time availability.  
+- Destination-based spot suggestions.  
+- QR confirmation at entry.  
+- Track session: fees, duration, segment.  
+- Exit summary + payment confirmation.  
+- Multilingual: English + Arabic.  
+
+**UI Approach** → MVVM Pattern  
+- Model → Data (spots, user session).  
+- View → Flutter widgets.  
+- ViewModel → Business logic & state mgmt.  
+![](assets/image13.png)  
+📸 *Figure 13: Parking availability UI.*
+![](assets/image14.png)    
+📸 *Figure 14: Payment confirmation screen.*  
+
+
+# 📊 5. Results and Discussion  
+
+## 5.1 Model Performance  
+
+### 5.1.1 Car Plate Detection (YOLOv11 + OCR)  
+
+- The YOLOv11 model was trained on a custom dataset for license plate detection.  
+- Monitored **loss components**:  
+  - Box Loss  
+  - Classification Loss  
+  - DFL Loss  
+- Evaluation Metrics: **Precision, Recall, mAP@0.5, mAP@0.5:0.95**  
+
+✅ Training & validation losses decreased consistently.  
+✅ Precision & mAP improved steadily → stable convergence.  
+![](assets/image15.png)  
+📸 *Figure 15: YOLOv11 training & validation curves.*
+![](assets/image16.png)  
+📸 *Figure 16: Confusion matrix of YOLOv11 license plate detection.*  
+
+Further analysis:  
+- **Precision-Recall Curve** + **F1 Curve** show robustness across thresholds.  
+![](assets/image17.png)  
+📸 *Figure 17: Precision-Recall + F1 curves.*
+![](assets/image18.png)    
+📸 *Figure 18: Test output → Successful plate detection & recognition.*  
+
+---
+
+### 5.1.2 Parking Spot Classification (SVM Model)  
+
+- **Accuracy**: 100% on test set.  
+- **Precision, Recall, F1** = 1.0  
+- Dataset limitation: Collected from **one parking lot only** → low variability.  
+
+⚠️ May not generalize well → needs more diverse datasets.  
+
+---
+
+## 5.2 Interpretation of Results  
+
+- **YOLOv11 (Car Plates)** → Strong detection, but sensitive to:  
+  - Low lighting  
+  - Plate occlusion  
+  - Blurry/low-res input (OCR misreads)  
+
+- **SVM (Parking Spots)** → Works perfectly in controlled environment,  
+  but requires retraining/fine-tuning for:  
+  - New layouts  
+  - Different angles & lighting  
+  - Multi-location scaling  
+
+**Comparison with traditional systems**:  
+- 🚫 Manual attendants → time consuming.  
+- 🚫 Sensor-based → costly & less scalable.  
+- ✅ Our approach → Fully automated, scalable, cloud-integrated pipeline.  
+
+**Challenges**:  
+- Limited datasets  
+- Annotation workload  
+- OCR sensitivity  
+
+📌 *Overall*: Strong feasibility demonstrated. With broader datasets, can be deployed in **real-world malls & large parking facilities**.  
+
+---
+
+# 🚗 6. Illustrative Examples  
+
+### Example: Full Parking Session Flow  
+
+#### 1️⃣ Vehicle Entry & License Plate Recognition  
+- Camera → Captures incoming vehicle plate.  
+- YOLOv11 → Detects bounding box.  
+- OCR → Extracts plate number.  
+- PostgreSQL → Saves plate linked with user.  
+
+📸 *Figure 19: Plate detection + OCR result displayed via API.*  
+
+- To prevent misreads → Plate displayed on **QR screen** at gate.  
+- User scans via mobile app → Confirms before proceeding.  
+
+📸 *Figure 20: QR code display for user confirmation.*  
+
+---
+
+#### 2️⃣ Parking Spot Detection & Mobile Interaction  
+- Overhead camera → Feeds frames into **SVM spot classifier**.  
+- Spots labeled:  
+  - 🟩 Empty  
+  - 🟥 Occupied  
+
+- Updates availability in real time → synced with mobile app.  
+
+**User options**:  
+1. Browse all available spots in real time.  
+2. Select mall store/area → system recommends nearest available spot.  
+
+---
+
+#### 3️⃣ Exit & Fee Calculation  
+- At exit → Vehicle re-detected.  
+- Backend trigger:  
+  - Records `exit_time`.  
+  - Calculates duration & fee.  
+  - Saves record in `parking_history`.  
+  - Removes active session from `car` table.  
+
+---
+
+⚡ **End-to-End Summary**  
+The Smart Parking system runs:  
+- 🧠 AI-powered detection (YOLO + OCR + SVM)  
+- 🔗 Seamless database integration (PostgreSQL)  
+- 📱 User-friendly mobile interaction (Flutter)  
+- 💳 Automated fee handling  
+
+➡️ Provides **autonomous, real-time, high-accuracy parking management** without human intervention.  
