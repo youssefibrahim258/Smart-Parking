@@ -238,32 +238,38 @@ For complete API documentation, visit: `http://localhost:8000/docs`
 ### Mobile Application
 
 <p align="center">
-  <img src="asset/app1.png" width="300"/>
-  <img src="asset/app2.png" width="300"/>
-  <img src="asset/app3.png" width="300"/>
-  <img src="asset/app4.png" width="300"/>
-  <img src="asset/app5.png" width="300"/>
-
+  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg"/>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-3.0+-blue.svg"/>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/FastAPI-0.68+-green.svg"/>
+</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg"/>
 </p>
 
 
 ### License Plate Recognition
 
 <p align="center">
-  <img src="asset/image9.png" alt="License Plate Detection" width="400"/>
-  <img src="asset/image10.png" alt="OCR Result" width="400"/>
+  <img src="asset/image7.png" alt="License Plate Detection" width="400"/>
+  <img src="asset/image8.png" alt="OCR Result" width="400"/>
+    <img src="asset/image9.png" alt="train code" width="400"/>
+
 </p>
 
 ### Parking Space Detection
 
 <p align="center">
-  <img src="asset/image11.png" alt="Parking Space Detection" width="600"/>
+  <img src="asset/image10.png" alt="Parking Space Detection" width="600"/>
 </p>
 
 ### Database Schema
 
 <p align="center">
-  <img src="asset/image12.png" alt="Database ERD" width="600"/>
+  <img src="asset/image11.png" alt="Database ERD" width="600"/>
 </p>
 
 ## File Structure
@@ -349,6 +355,15 @@ If you have any questions or need help, please:
 - Check our [documentation](docs/)
 
 ---
+
+## 👨‍💻 Team Testing
+
+<p align="center">
+  <img src="assets/team.png" alt="Team Testing Session" width="70%"/>
+</p>
+
+📸 *Figure: Our team during the Smart Parking system testing session.*
+
 
 <p align="center">
   Made with ❤️ for smarter cities
