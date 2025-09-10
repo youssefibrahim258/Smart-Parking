@@ -26,7 +26,7 @@
 - [Usage](#usage)
 - [API Documentation](#api-documentation)
 - [Model Performance](#model-performance)
-- [Screenshots](#screenshots)
+
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -294,6 +294,21 @@ smart-parking/
 └── README.md
 ```
 
+## Additional Results
+
+### Dataset Samples
+
+<p align="center">
+  <img src="asset/image4.png" alt="License Plate Dataset Samples" width="600"/>
+</p>
+
+### Model Performance Analysis
+
+<p align="center">
+  <img src="asset/image17.png" alt="Precision-Recall Curves" width="400"/>
+  <img src="asset/image18.png" alt="Test Results" width="400"/>
+</p>
+
 ## Contributing
 
 We welcome contributions! Please follow these steps:
@@ -345,4 +360,4 @@ If you have any questions or need help, please:
 
 <p align="center">
   Made with ❤️ for smarter cities
-</p>
+</p> 
