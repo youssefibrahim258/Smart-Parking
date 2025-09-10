@@ -224,9 +224,6 @@ For complete API documentation, visit: `http://localhost:8000/docs`
 - **Validation Accuracy:** 91.8%
 - **Inference Time:** ~50ms per image
 
-<p align="center">
-  <img src="asset/image3.png" alt="Training Curves" width="600"/>
-</p>
 
 ### Parking Space Classification (SVM)
 - **Accuracy:** 100% on test set
@@ -234,20 +231,21 @@ For complete API documentation, visit: `http://localhost:8000/docs`
 - **Recall:** 1.0
 - **F1-Score:** 1.0
 
-<p align="center">
-  <img src="asset/image4.png" alt="Confusion Matrix" width="400"/>
-</p>
+
 
 ## Screenshots
 
 ### Mobile Application
 
 <p align="center">
-  <img src="asset/image5.png" alt="Home Screen" width="200"/>
-  <img src="asset/image6.png" alt="Parking Availability" width="200"/>
-  <img src="asset/image7.png" alt="Reservation" width="200"/>
-  <img src="asset/image8.png" alt="Payment" width="200"/>
+  <img src="asset/app1.png" width="300"/>
+  <img src="asset/app2.png" width="300"/>
+  <img src="asset/app3.png" width="300"/>
+  <img src="asset/app4.png" width="300"/>
+  <img src="asset/app5.png" width="300"/>
+
 </p>
+
 
 ### License Plate Recognition
 
