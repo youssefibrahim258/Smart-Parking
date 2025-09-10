@@ -1,7 +1,7 @@
 # Smart Parking System 🚗
 
 <p align="center">
-  <img src="asset/image1.png" alt="Smart Parking Logo" width="300"/>
+  <img src="asset/logo parking.jpg" alt="Smart Parking Logo" width="300"/>
 </p>
 
 <p align="center">
@@ -312,7 +312,7 @@ smart-parking/
 
 <p align="center">
   <img src="asset/image14.png" alt="Precision-Recall Curves" width="400"/>
-  <img src="asset/image15.png" alt="Test Results" width="400"/>
+  <img src="asset/image1.png" alt="Test Results" width="400"/>
 </p>
 
 ## Contributing
