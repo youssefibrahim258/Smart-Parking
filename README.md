@@ -1,4 +1,4 @@
-# Smart Parking System 🚗
+# Smart Parking System 
 
 <p align="center">
   <img src="asset/logo parking.jpg" alt="Smart Parking Logo" width="500"/>
@@ -65,11 +65,11 @@ Our system combines **real-time camera data**, **AI models**, and a **mobile app
 - **Find My Car:** Help users locate their parked vehicles
 
 ### User Benefits
-- ⏱️ Reduced waiting time
-- 📱 Convenient mobile interface
-- 🎯 Destination-aware parking suggestions
-- 💳 Cashless payment system
-- 🔍 Easy car location tracking
+-  Reduced waiting time
+-  Convenient mobile interface
+-  Destination-aware parking suggestions
+-  Cashless payment system
+-  Easy car location tracking
 
 ## Architecture
 
